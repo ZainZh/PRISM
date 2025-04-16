@@ -1,120 +1,53 @@
-<h2 align="center">
-  <b>A Hyperspectral Imaging Guided Robotic Grasping System,</b>
+# Academic Project Page Template
+This is an academic paper project page template.
 
-<b><i></i></b>
-</h2>
 
-This is the official code release of [A Hyperspectral Imaging Guided Robotic Grasping System]().
+Example project pages built using this template are:
+- https://horwitz.ai/probex
+- https://vision.huji.ac.il/probegen
+- https://horwitz.ai/mother
+- https://horwitz.ai/spectral_detuning
+- https://vision.huji.ac.il/ladeda
+- https://vision.huji.ac.il/dsire
+- https://horwitz.ai/podd
+- https://dreamix-video-editing.github.io
+- https://horwitz.ai/conffusion
+- https://horwitz.ai/3d_ads/
+- https://vision.huji.ac.il/ssrl_ad
+- https://vision.huji.ac.il/deepsim
 
-*
 
-*[[paper]]() [[project]](https://zainzh.github.io/PRISM/) [[code]](https://github.com/ZainZh/PRISM) [[Datasets]](https://huggingface.co/datasets/ZainZh/PRISM/blob/main/cloth_hyperspectral_datasets.zip) [[CAD files]](https://huggingface.co/datasets/ZainZh/PRISM/blob/main/PRISM_SOLIDWORKS2019.zip)
-**
 
-<div align=center>
-    <img src="assets/images/system.png" width=100%>
-</div>
-<div align=center>
-    <img src="assets/images/experiment.png" width=70%>
-</div>
-## Environment
+## Start using the template
+To start using the template click on `Use this Template`.
 
-The complete deployment of the project includes the following components:
+The template uses html for controlling the content and css for controlling the style. 
+To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
 
-- Model Training and Inference
-- Robotic Manipulation
-- PRISM Control (Hyperspectral Camera, Motors)
+**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
 
-Due to the windows required of the hyperspectral camera control interface, the project is developed on :
+## Components
+- Teaser video
+- Images Carousel
+- Youtube embedding
+- Video Carousel
+- PDF Poster
+- Bibtex citation
 
-- Windows 10.
+## Tips:
+- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
+- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
+(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
+- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
+- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
+- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
+- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
+- This project page can also be made into a github pages website.
+- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
+- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://horwitz.ai](https://horwitz.ai)
 
-But the model training and inference can be run on any platform such as **Ubuntu 20.04 (tested)** that supports PyTorch.
+## Acknowledgments
+Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
 
-## Installation
-
-1. Create conda environment and install pytorch
-
-   This code is tested on Python 3.10.14 on Ubuntu 20.04 and Windows 10.
-
-    ```
-    conda create -n prism python=3.10
-    conda activate prism
-    # pytorch with cuda 11.8
-    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-    ```
-
-2. Dependencies
-
-   Install dependencies
-
-    ```
-    pip install joblib
-    pip install tqdm
-    pip install tensorboard
-    pip install omegaconf
-    pip install opencv-python
-    pip install matplotlib 
-    pip install scipy
-    pip install scikit-learn
-    pip install plantcv
-    pip install spectral
-    pip install numpy==1.26.4
-    pip install h5py
-    ```
-
-## Inference and Visualization
-
-Only tested under the pycharms environment. please unclick the "Run with Python Console" and  "view > Scientific Mode"
-option in the run configuration.
-
-Run commands below to run the prism working animation:
-
-```bash
-python scripts/prism_animation.py
-```
-
-<div align=center>
-    <img src="assets/images/prism_animation.gif" width="60%">
-</div>
-After finished, you shall see printed 3D affordance results w/ grasp and visualization
-at `run_realworld/gym_outputs/drawer_open/` like below:
-
-## Train and Test
-You can modify the config parameter `model_type` in `config/train.yaml` to train the specific model.
-```bash
-python scripts/train.py
-```
-
-You can also run the test script to evaluate the trained model.
-
-```bash
-python scripts/test.py
-```
-
-<div align=center>
-    <img src="assets/images/test.gif" width="60%">
-</div>
-
-## Control Codes
-
-All C++ device control codes are in the "c_device" folder. This includes control modules for Modbus devices, the Nachi
-robot, and the Specim linescan camera.
-```bash
---C_device
-    --libModbus
-    --nachi  
-    --specim 
-```
-<!-- ## Citation
-
-If you find this work helpful, please consider citing:
-
-```
-@article{kuang2024ram,
-  title={RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation},
-  author={Kuang, Yuxuan and Ye, Junjie and Geng, Haoran and Mao, Jiageng and Deng, Congyue and Guibas, Leonidas and Wang, He and Wang, Yue},
-  journal={arXiv preprint arXiv:2407.04689},
-  year={2024}
-}
-``` -->
+## Website License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
