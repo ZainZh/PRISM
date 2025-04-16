@@ -101,7 +101,7 @@ python scripts/test.py
 All C++ device control codes are in the "c_device" folder. This includes control modules for Modbus devices, the Nachi
 robot, and the Specim linescan camera.
 ```bash
---C_device
+--c_device
     --libModbus
     --nachi  
     --specim 
