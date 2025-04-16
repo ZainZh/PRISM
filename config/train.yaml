@@ -1,0 +1,45 @@
+train_dir: "/home/clover/Dataset/hyperspectral_cloth/cloth/train"
+test_dir: "/home/clover/Dataset/hyperspectral_cloth/cloth/test"
+val_dir: "/home/clover/Dataset/hyperspectral_cloth/cloth/train"
+save_dir: "/home/clover/train_results/prism"
+class_dict:
+  "0": "background"
+  "1": "white_polyester"
+  "2": "white_linen"
+  "3": "white_silk"
+  "4": "white_wool"
+  "5": "white_cotton"
+  "6": "white_0.5poly+0.5vis"
+  "7": "white_lyocell"
+  "8": "white_acetate"
+  "9": "white_0.1ac+0.9vis"
+  "10": "black_polyester"
+  "11": "black_linen"
+  "12": "black_silk"
+  "13": "black_wool"
+  "14": "black_cotton"
+  "15": "black_0.5poly+0.5vis"
+  "16": "black_lyocell"
+  "17": "black_acetate"
+
+
+train_label: [
+  "background",
+  "black_acetate", "black_wool", "black_silk", "black_linen"
+]
+
+# "ClipTransform" or "MNFTransform"
+transform: "ClipTransform"
+
+#"prism (1D CNN), "
+#"li (3D CNN), "
+#"boulch (1D semi-supervised CNN),"
+# "mei (3D CNN),"
+model_type: "prism"
+
+test_model_path: "/home/clover/train_results/prism/20250411_132322975_train_boulch/model/best.pth"
+
+
+
+batch_size: 512
+epoch_times: 50

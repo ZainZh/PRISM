@@ -1,0 +1,17 @@
+model_name: hu
+cnn_shape: 1D
+optimizer: 
+SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)
+dataset_transform,: 
+'ClipTransform'
