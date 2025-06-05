@@ -8,7 +8,7 @@ This is the official code release of [A Hyperspectral Imaging Guided Robotic Gra
 
 
 
-[[paper]]() [[project]](https://zainzh.github.io/PRISM/) [[code]](https://github.com/ZainZh/PRISM) [[Datasets]](https://huggingface.co/datasets/ZainZh/PRISM/blob/main/cloth_hyperspectral_datasets.zip) [[CAD files]](https://huggingface.co/datasets/ZainZh/PRISM/blob/main/PRISM_SOLIDWORKS2019.zip)
+[[paper]](assets/A_Hyperspectral_Imaging_Guided_Robotic_Grasping_System.pdf) [[project]](https://zainzh.github.io/PRISM/) [[code]](https://github.com/ZainZh/PRISM) [[Datasets]](https://huggingface.co/datasets/ZainZh/PRISM/blob/main/cloth_hyperspectral_datasets.zip) [[CAD files]](https://huggingface.co/datasets/ZainZh/PRISM/blob/main/PRISM_SOLIDWORKS2019.zip)
 
 
 <div align=center>
@@ -106,15 +106,20 @@ robot, and the Specim linescan camera.
     --nachi  
     --specim 
 ```
-<!-- ## Citation
+## Citation
 
 If you find this work helpful, please consider citing:
 
 ```
-@article{kuang2024ram,
-  title={RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation},
-  author={Kuang, Yuxuan and Ye, Junjie and Geng, Haoran and Mao, Jiageng and Deng, Congyue and Guibas, Leonidas and Wang, He and Wang, Yue},
-  journal={arXiv preprint arXiv:2407.04689},
-  year={2024}
-}
-``` -->
+@ARTICLE{11020724,
+  author={Sun, Zheng and Dong, Zhipeng and Wang, Shixiong and Chu, Zhongyi and Chen, Fei},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={A Hyperspectral Imaging Guided Robotic Grasping System}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={Hyperspectral imaging;Robots;Grasping;Robot sensing systems;Sorting;Service robots;Cameras;Robot vision systems;Nonlinear distortion;Servomotors;Perception for Grasping and Manipulation;Software-Hardware Integration for Robot Systems;Grasping},
+  doi={10.1109/LRA.2025.3575654}}
+
+``` 
